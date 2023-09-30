@@ -6,7 +6,8 @@
 
 
 import java.util.*;
-public class ArrayDeletion{
+public class ArrayDeletion
+{
 	public static void main(String args[]){
 		Solution s = new Solution();
 		int arr[] = {1,2,3,4,5,6};
@@ -20,20 +21,25 @@ public class ArrayDeletion{
 }
 
 class Solution{
-	void deleteLast(int arr[]){
+	void deleteLast(int arr[])
+	{
 		arr[arr.length-1]=0;
 	}
 
-	void deleteStart(int arr[]){
+	void deleteStart(int arr[])
+	{
 		// arr[0]=0;
 		for(int i=0;i<arr.length-1;i++){
 			arr[i]=arr[i+1];
 		}
 	}
 
-	void deleteAt(int arr[],int pos){
-		for(int i=0;i<=arr.length-1;i++){
-			if(i==pos){
+	void deleteAt(int arr[],int pos)
+	{
+		for(int i=0;i<=arr.length-1;i++)
+		{
+			if(i==pos)
+			{
 				arr[i]=arr[i+1];
 				return;
 			}
